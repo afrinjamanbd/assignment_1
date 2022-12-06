@@ -1,30 +1,33 @@
 student = { }
 
-student_info = []
+all_student_info = []
 
 teacher = { }
 
-teacher_info = []
+all_teacher_info = []
 
-school_info = [student_info, teacher_info]
+school_info = [al_student_info, all_teacher_info]
 
 a = int(input('Please input total student number: '))
 
 for i in range(a):
-    var = input('insert student1 name: ')
-    student['name'] = var
-    var_age = int(input('insert student age: '))
-    student['age'] = var_age
-    student_info.append(student.copy())
+    student['name']  = input('insert student name: ')
+    student['age'] = int(input('insert student age: '))
+    all_student_info.append(student.copy())
 
 b = int(input('Please input total teahcer number: '))
 
 for i in range(b):
-    var = input('insert teahcer name: ')
-    teacher['name'] = var
-    var_subject = input('insert teahcer subject: ').split(' ')
-    teacher['subject'] = var_subject
-    teacher_info.append(teacher.copy())
+    teacher['name'] = input('insert teahcer name: ')
+    teacher['subject'] = input('insert teahcer subject: ').split(' ')
+    all_teacher_info.append(teacher.copy())
+
+
+
+
+
+
+
 
 # [{'name': 'afrin', 'subjects': ['bangla', 'english']}, {'name': 'mithila', 'subjects': ['python', 'c++']}]
 
