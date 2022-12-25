@@ -1,3 +1,3 @@
-class Myclass:
+class Christmas:
     def __init__(self):
-        print('Class name : Myclass')
+        print('Class name : Christmas')
