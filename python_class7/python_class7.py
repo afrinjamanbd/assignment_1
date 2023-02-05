@@ -30,7 +30,7 @@ class Student:
             return a-b
 
 
-class Teacher(School):
+class Teacher(Student):
 
     def __init__(self, p, q):
         self.p = p
@@ -48,8 +48,13 @@ class Teacher(School):
     def schoolname(self):
         pass
     
+    def somthing():
+        print('from teacher class')
+    
 a = Teacher('afrin', 'jaman')
-a.test().test()
+# a.test().test()
+a.somthing()
+
 
 
 
